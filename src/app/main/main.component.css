@@ -1,0 +1,67 @@
+.home-oldal__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(33, 37, 41);
+    width: 100px;
+}
+
+@media (max-width: 900px) {
+    .home-oldal__socials {
+        display: none;
+    }
+}
+
+.home-footer__icon {
+    width: 60%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px 10px rgb(56, 56, 56);
+    margin-block: 20px;
+    margin-left: 10px;
+}
+
+.home-footer__icon:hover {
+    box-shadow: 1px 1px 2px 10px rgb(132, 54, 54);
+}
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 90rem;
+    width: 92%;
+    text-align: center;
+    margin-left: 70px;
+}
+.btn {
+    background: #facf0f;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(139, 139, 139, 0.15);
+    transition: transform .4s;
+}
+.btn:hover {
+    transform: translateY(4px);
+}
+.heading-primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #b3b3b3;
+    font-weight: 800;
+}
+.text-primary {
+    color: #333;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 0;
+}

@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark p-3 bg-dark" id="headerNav">
+<nav class="navbar navbar-expand-lg navbar-dark p-3 bg-dark sticky-top" id="headerNav">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -13,7 +14,7 @@
           <a class="nav-link mx-2" routerLinkActive="main" routerLink="projektek">Projektek</a>
         </li>
         <li class="nav-item d-none d-lg-block">
-          <img id="logo" src="../assets/Logo.jpg"/>
+          <img id="logo" src="../assets/Logo.jpg" />
         </li>
         <li class="nav-item">
           <a class="nav-link mx-2" routerLinkActive="motivacio" routerLink="motivacio">Motiváció</a>
@@ -26,13 +27,49 @@
   </div>
 </nav>
 <div class="container">
-  
 </div>
 <router-outlet></router-outlet>
-
-
-<footer class="bg-dark p-3 fixed-bottom text-center">
+<footer class="main-footer fixed-bottom">
   <div class="container">
-    <h3>&copy; 2023 - Kardos Bence</h3>
+    <div class="main-footer-felso row">
+      <div class="main-footer-bal col-lg-4">
+        <h2 class="heading heading-sm text-lt mb-4">Kardos Bence</h2>
+
+        <p class="main-footer__rovid-leiras text-wrap">
+          "A frontend fejlesztők számára a felhasználói élmény prioritást élvez. A cél az, hogy az oldalak könnyen
+          használhatók, interaktívak és felhasználóbarátok legyenek."
+        </p>
+      </div>
+      <div class="col-lg-5">
+
+      </div>
+      <div class="main-footer-jobb col-lg-3">
+        <h2 class="heading heading-sm main-footer__heading-sm mb-4">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bence-kardos-925132123/">
+            <img class="main-footer__icon" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+              alt="Kardos Bence Linkedin Profil">
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/KardosBence">
+            <img class="main-footer__icon"
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              alt="Kardos Bence Github Profil">
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/kardbence/">
+            <img class="main-footer__icon"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"
+              alt="Kardos Bence Facebook Profil">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="main-footer-also row">
+    <div class="col-12 text-center mb-3">
+      &copy; {{aktYear}} <a id="mail" href="mailto:kardbence@gmail.com">Kardos Bence</a>
+    </div>
   </div>
 </footer>
