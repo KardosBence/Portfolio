@@ -1,31 +1,62 @@
-<nav class="navbar navbar-expand-lg navbar-dark p-3 bg-dark sticky-top" id="headerNav">
-  <div class="container">
+<nav class="navbar navbar-expand-lg sticky-top" id="headerNav">
+  <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link mx-2" routerLinkActive="main" routerLink="main">Bemutatkozás</a>
+    <div class=" collapse navbar-collapse col-2" id="navbarNavDropdown">
+      <div class="d-none d-lg-block">
+        <img id="logo" src="../assets/Logo.jpg" />
+      </div>
+      <div class="navbar mx-auto col-6">
+        <a class="navbar-item" routerLink="main">Home</a>
+        <a class="navbar-item" href="#rolam">Rólam</a>
+        <a class="navbar-item" href="#projektek">Projektek</a>
+        <a class="navbar-item" href="#kapcsolat">Kapcsolat</a>
+      </div>
+      <!--<ul class=" navbar mx-auto">
+        <li class="navbar-button">
+          <a class="navbar-item" routerLink="main">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" routerLinkActive="main" routerLink="projektek">Projektek</a>
+        <li class="navbar-button">
+          <a class="navbar-item">Rólam</a>
         </li>
-        <li class="nav-item d-none d-lg-block">
-          <img id="logo" src="../assets/Logo.jpg" />
+        <li class="navbar-button">
+          <a class="navbar-item">Projektek</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" routerLinkActive="motivacio" routerLink="motivacio">Motiváció</a>
+        <li class="navbar-button">
+          <a class="navbar-item">Kapcsolat</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mx-2" routerLinkActive="kapcsolat" routerLink="kapcsolat">Kapcsolat</a>
-        </li>
-      </ul>
+      </ul>-->
+      <section id="DateBox" class="col-2">
+        <div class="Date">
+          <p class="d-flex">{{aktDatum}}</p>
+        </div>
+      </section>
     </div>
   </div>
 </nav>
+<div class="home-oldal__socials">
+  <div class="home-oldal__social">
+    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bence-kardos-925132123/">
+      <img class="home-oldal__icon" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+        alt="Kardos Bence Linkedin Profil">
+    </a>
+  </div>
+  <div class="home-oldal__social">
+    <a target="_blank" rel="noreferrer" href="https://github.com/KardosBence">
+      <img class="home-oldal__icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        alt="Kardos Bence Github Profil">
+    </a>
+  </div>
+  <div class="home-oldal__social">
+    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/kardbence/">
+      <img class="home-oldal__icon" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg"
+        alt="Kardos Bence Facebook Profil">
+    </a>
+  </div>
+</div>
 <div class="container">
 </div>
 <router-outlet></router-outlet>

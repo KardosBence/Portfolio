@@ -1,32 +1,132 @@
-.nav-item{
-    margin: auto;
-    margin-inline: 20px;
+/*Navbar*/
+/*.navbar-button{
+    margin-block: 10px;
+    margin-inline: 80px;
+    list-style-type: none;
+    box-shadow: 5px 5px 20px 1px rgb(145, 145, 145);
+    border-radius: 5px;
+    background-color: rgb(184, 184, 184);
+    padding-block: 10px;
+    padding-inline: 15px;
+}*/
+.navbar-item {
+
     font-size: 20px;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    list-style-type: none;
+    padding-block: 10px;
+    padding-inline: 15px;
 }
-#logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+
+.navbar-item:hover {
+    animation: hover 1s forwards;
 }
-footer{
+
+@keyframes hover {
+    0% {
+        color: rgba(255, 255, 255, 0.55);
+        ;
+    }
+
+    100% {
+        color: #15ca1e;
+    }
+}
+
+/*
+@media (max-width: 1460px) {
+    .navbar-item {
+        margin-inline: 40px;
+    }
+}
+*/
+#DateBox {
+    position: right;
+    animation: fadeIn 10s forwards;
+}
+
+.Date {
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.55);
 }
-nav li{
-    color: white;
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
-.main-footer__icon{
+
+@media (max-width: 1050px) {
+    .Date {
+        display: none;
+    }
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
+
+/*Navbar*/
+
+/*Oldal Social Gombok*/
+.home-oldal__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(33, 37, 41);
+    width: 100px;
+}
+
+@media (max-width: 900px) {
+    .home-oldal__socials {
+        display: none;
+    }
+}
+
+.home-oldal__icon {
+    width: 60%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px 10px rgb(56, 56, 56);
+    margin-block: 20px;
+    margin-left: 10px;
+}
+
+.home-oldal__icon:hover {
+    box-shadow: 1px 1px 2px 10px rgb(132, 54, 54);
+}
+
+/*Oldal Social Gombok*/
+
+/*Footer*/
+footer {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.main-footer__icon {
     width: 15%;
     margin-right: 30px;
     border-radius: 10%;
     box-shadow: 1px 1px 10px 10px rgb(56, 56, 56);
 }
-.main-footer__icon:hover{
+
+.main-footer__icon:hover {
     box-shadow: 1px 1px 20px 10px rgb(132, 54, 54);
 }
 
-#mail{
+#mail {
     text-decoration: none;
 }
-#mail:visited{
+
+#mail:visited {
     color: blue;
 }
+
+/*Footer*/

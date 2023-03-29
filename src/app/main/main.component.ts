@@ -6,4 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  koszontes: string = "";
+  ora: number = new Date().getHours();
+
+  constructor() {
+    setInterval(() => {
+      if (this.ora < 9) {
+        this.koszontes = "Jó reggelt!";
+      } else if (this.ora < 18) {
+        this.koszontes = "Jó napot!";
+      } else {
+        this.koszontes = "Jó estét!";
+      }
+    }, 100)
+    
+  }
 }
+
