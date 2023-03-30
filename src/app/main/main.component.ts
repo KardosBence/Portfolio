@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  koszontes: string = "";
+  koszontes: string = "Szia!";
   ora: number = new Date().getHours();
 
   constructor() {
@@ -14,11 +14,11 @@ export class MainComponent {
       if (this.ora < 9) {
         this.koszontes = "Jó reggelt!";
       } else if (this.ora < 18) {
-        this.koszontes = "Jó napot!";
+        this.koszontes = "Szia!";
       } else {
         this.koszontes = "Jó estét!";
       }
-    }, 100)
+    }, 1000)
     
   }
 }
