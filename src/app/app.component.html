@@ -1,37 +1,24 @@
-<nav class="navbar navbar-expand-lg" id="headerNav">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="headerNav">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class=" collapse navbar-collapse col-2" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <div class="d-none d-lg-block m-auto">
-        <img id="logo" src="../assets/Logo.jpg" />
+        <img id="logo" src="../assets/logo2.jpg" />
       </div>
-      <div class="navbar mx-auto col-6">
+      <p id="name" class="d-none d-lg-block m-auto">Kardos Bence</p>
+      <div class="navbar nav mx-auto col-4">
         <a class="navbar-item" routerLink="main">Home</a>
         <a class="navbar-item" href="#rolam">Rólam</a>
         <a class="navbar-item" href="#projektek">Projektek</a>
         <a class="navbar-item" href="#kapcsolat">Kapcsolat</a>
       </div>
-      <!--<ul class=" navbar mx-auto">
-        <li class="navbar-button">
-          <a class="navbar-item" routerLink="main">Home</a>
-        </li>
-        <li class="navbar-button">
-          <a class="navbar-item">Rólam</a>
-        </li>
-        <li class="navbar-button">
-          <a class="navbar-item">Projektek</a>
-        </li>
-        <li class="navbar-button">
-          <a class="navbar-item">Kapcsolat</a>
-        </li>
-      </ul>-->
       <section id="DateBox" class="col-2">
         <div class="Date">
-          <p class="d-flex">{{aktDatum}}</p>
+          <p class="d-flex">Mai dátum: <br> {{aktDatum}}</p>
         </div>
       </section>
     </div>

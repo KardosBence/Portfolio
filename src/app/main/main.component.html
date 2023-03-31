@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container home">
   <div class="row">
     <div class="col-12">
       <section class="home-content">
@@ -11,7 +11,7 @@
           </p>
         </div>
         <div class="home-cta">
-          <a href="./#projektek" class="btn">Projektek</a>
+          <a href="#projektek" class="btn">Projektek</a>
         </div>
         <div class="home-hero__mouse-scroll-cont">
           <div class="mouse"></div>
@@ -27,8 +27,8 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">Rólam</span>
           <span class="heading-sec__sub">
-            Itt további információkat találsz rólam, a tevékenységeimről és a
-            jelenlegi ismereteimről a programozás és a technológia terén.
+            Itt további információkat találsz rólam, a tevékenységeimről és
+            jelenlegi ismereteimről a programozás és technológia terén.
           </span>
         </h2>
         <div class="about__content">
@@ -45,7 +45,7 @@
                 amelyek az évek során a <strong>webfejlesztésben</strong>
                 tanult dolgokkal kapcsolatosak, így segíthetnek
                 a fejlesztői közösség többi emberének.
-                Nyugodtan csatlakozzon vagy kövessen a <a rel="noreferrer"
+                Nyugodtan csatlakozzon vagy kövessen <a rel="noreferrer"
                   href="https://www.linkedin.com/in/bence-kardos-925132123/" target="_blank">Linkedin</a> oldalamon,
                 ahol hasznos tartalmakat teszek közzé
                 a webfejlesztéssel és programozással kapcsolatban.
@@ -57,7 +57,7 @@
                 ne habozzon <strong>kapcsolatba</strong> lépni velem.
               </p>
             </div>
-            <a href="./#contact" class="btn">Contact</a>
+            <a href="./#contact" class="btn">Kapcsolat</a>
           </div>
           <div class="about__content-skills">
             <h3 class="about__content-title">Kézségek</h3>
@@ -65,7 +65,7 @@
               <div id="html" class="skills__skill">HTML</div>
               <div id="css" class="skills__skill">CSS</div>
               <div id="bootstrap" class="skills__skill">Bootstrap</div>
-              <div id="javaScript" class="skills__skill">JavaScript</div>
+              <div id="javascript" class="skills__skill">JavaScript</div>
               <div id="typescript" class="skills__skill">Typescript</div>
               <div id="angular" class="skills__skill">Angular</div>
               <div id="git" class="skills__skill">GIT</div>
@@ -84,8 +84,31 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <section id="project">
-        <p style="color: white;">Projektek Section</p>
+      <section id="projektek" class="projects sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projektek</span>
+            <span class="heading-sec__sub">
+              Itt talál néhány személyes és ügyfélprojektet. <br>
+              Minden projekt saját esettanulmányt tartalmaz
+            </span>
+          </h2>
+    
+          <div class="projects__content">
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img src="/src/assets/uvegimpressio_laptop.jpg" alt="Project picture" class="projects__row-img" loading="lazy">
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Üvegimpressio</h3>
+                <p class="projects__row-content-desc">
+                  Üvegimpressio az első projektem, melyet személyes felkérés által készítettem.
+                </p>
+                <a class="btn" href="https:\\www.uvegimpressio.hu" target="_blank">Oldal megnyitása</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -93,8 +116,35 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <section id="contact">
-        <p style="color: white;">Kapcsolat Section</p>
+      <section id="contact" class="contact sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt">Kapcsolat</span>
+            <span class="heading-sec__sub heading-sec__sub--lt">
+              Nyugodtan vedd fel velem a kapcsolatot az alábbi űrlap kitöltésével, és megkapom
+              vissza a lehető leghamarabb
+            </span>
+          </h2>
+          <div class="contact__form-container">
+            <form action="#" class="contact__form" method="post"><input type="hidden" name="form-name" value="form 1">
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="name">Név</label>
+                <input required="" placeholder="Adja meg nevét" type="text" class="contact__form-input" name="name" id="name">
+              </div>
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="email">E-mail</label>
+                <input required="" placeholder="Adja meg email címét" type="email" class="contact__form-input" name="email" id="email">
+              </div>
+              <div class="contact__form-field">
+                <label class="contact__form-label" for="message">Üzenet</label>
+                <textarea required="" cols="30" rows="10" class="contact__form-input" placeholder="Írja le üzenetét" name="message" id="message"></textarea>
+              </div>
+              <button type="submit" class="btn contact__btn">
+                Elküldés
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </div>
   </div>
