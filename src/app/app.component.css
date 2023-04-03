@@ -1,9 +1,20 @@
+.bg {
+    background-image: url("../assets/bg.png");
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: content-box;
+}
+
 /*Navbar*/
-#headerNav{
+#headerNav {
     background-color: rgb(33, 37, 41);
     box-shadow: 0px 10px 200px 1px rgba(173, 173, 173, 0.39);
 }
-#name{
+
+#name {
     position: absolute;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.55);
@@ -22,13 +33,14 @@
 @keyframes hovernav {
     0% {
         color: rgba(255, 255, 255, 0.55);
-        
+
     }
 
     100% {
         color: #15ca1e;
     }
 }
+
 #DateBox {
     position: right;
     animation: fadeIn 10s forwards;
@@ -75,7 +87,7 @@
     width: 100px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
     .home-oldal__socials {
         display: none;
     }

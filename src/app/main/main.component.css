@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 56.25em) {
     .sec-pad {
-        padding:8rem 0
+        padding: 8rem 0
     }
 }
 
@@ -245,59 +245,70 @@ p {
     transition: all 0.5s;
 }
 
-#bootstrap:hover{
+#bootstrap:hover {
     background-color: #712cf9;
     color: black;
     transition: all 0.5s;
 }
-#javascript:hover{
+
+#javascript:hover {
     background-color: #f1e05a;
     color: black;
     transition: all 0.5s;
 }
-#typescript:hover{
+
+#typescript:hover {
     background-color: #3178c6;
     color: black;
     transition: all 0.5s;
 }
-#angular:hover{
+
+#angular:hover {
     background-color: black;
     color: white;
     transition: all 0.5s;
 }
-#git:hover{
+
+#git:hover {
     background-color: #F44D27;
     color: black;
     transition: all 0.5s;
 }
-#github:hover{
+
+#github:hover {
     background-color: #F44D27;
     color: black;
     transition: all 0.5s;
 }
-#respo:hover{
+
+#respo:hover {
     background-color: #EE0000;
     color: black;
     transition: all 0.5s;
 }
-#seo:hover{
+
+#seo:hover {
     background-color: #33CC33;
     color: black;
     transition: all 0.5s;
 }
-#bsql:hover{
+
+#bsql:hover {
     background-color: #e38c00;
     color: black;
     transition: all 0.5s;
 }
-#bmysql:hover{
+
+#bmysql:hover {
     background-color: #4A76B8;
     color: black;
     transition: all 0.5s;
 }
+
 img {
     pointer-events: none;
 }
+
 .projects__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -307,7 +318,7 @@ img {
 
 @media only screen and (max-width: 56.25em) {
     .projects__row {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-gap: 2rem;
         margin-bottom: 8rem
     }
@@ -315,7 +326,7 @@ img {
 
 @media only screen and (max-width: 56.25em) {
     .projects__row {
-        text-align:center
+        text-align: center
     }
 }
 
@@ -344,7 +355,7 @@ img {
 
 @media only screen and (max-width: 56.25em) {
     .projects__row-content {
-        align-items:center
+        align-items: center
     }
 }
 
@@ -356,7 +367,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
     .projects__row-content-title {
-        font-size:2.4rem
+        font-size: 2.4rem
     }
 }
 
@@ -370,13 +381,11 @@ img {
 
 @media only screen and (max-width: 37.5em) {
     .projects__row-content-desc {
-        font-size:1.7rem
+        font-size: 1.7rem
     }
 }
 
-.contact {
-    
-}
+.contact {}
 
 .contact__form-container {
     box-shadow: 3px 3px 30px 40px black;
@@ -391,7 +400,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
     .contact__form-container {
-        padding:3rem
+        padding: 3rem
     }
 }
 
@@ -401,7 +410,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
     .contact__form-field {
-        margin-bottom:3rem
+        margin-bottom: 3rem
     }
 }
 
@@ -428,6 +437,6 @@ img {
 
 @media only screen and (max-width: 37.5em) {
     .contact__btn {
-        width:100%
+        width: 100%
     }
 }
